@@ -6,44 +6,39 @@ ciar no html estrutura do card
 */
 
 //Criando uma função para capturar info dos usuários 
-function salvarInfo() {
-let botao = document.querySelector('button')
+let botao = document.querySelector("#submit");
+botao.addEventListener("click",function(e){
+    e.preventDefault();
 
-botao.addEventListener('click', updateButton);
+    const tituloCard = document.querySelector("#entrada1");
+    const imagem = document.querySelector("#entrada2");
+    const texto = document.querySelector("#entrada3");
+   
+    let titulo = tituloCard.value;
+    let img = imagem.value;
+    let txt = texto.value;
 
-if(button.value === 'Star machine'){
-    button.value = 'Stop machine';
-    let assunto =    
-}
-
-}; 
+    console.log(titulo, img, txt);
+    
+});
 
 //Criando um novo Card
-let novoCard = document.createElement('div');
-console.log(div);
-
-novoCard.innerText = "Novo Card";
-console.log(div);
-
-//Adicionando nova entrada
-let tituloCard = document.getElementById('entrada1');
-console.log(entrada1);
+//let novoCard = document.createElement('div');
 
 
-//tem que criar uma variável para cada entrada do formulário e utilizá-la para exibir no card
-novoCard.innerHTML = `
-<div class="card"> 
-    <h2>tituloCard</h2>
-    <img src="${entrada2}">
-     <p>
-     TextoInserido
-     </p>
- </div>`;
+//novoCard.innerHTML = `
+//<div class="card"> 
+    //<h2>titulo</h2>
+    //<img src="img">
+    // <p>
+    // txt
+    // </p>
+ //</div>`;
 
 //Quando for necessário exibir o card inteiro
- novoCard.appendChild(card1);
+ //novoCard.appendChild(card1);
 
- let inserirImg = document.querySelectorAll('img');
- let novoCard = document.querySelectorAll('h2');
+ //let inserirImg = document.querySelectorAll('img');
+ //let novoCard = document.querySelectorAll('h2');
  //SetAtribute= Adiciona um novo atributo ou modifica o valor 
- let link = inserirImg.setAtribute("src", link);
+ //let link = inserirImg.setAtribute("src", link);
