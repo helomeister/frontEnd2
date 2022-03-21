@@ -24,7 +24,7 @@
     justify-content: space-between;
     margin: auto;
     width: 15em;
-    height: 30em;
+    height: 20em;
     background-color: rgba(119, 11, 78, 0.541);
     box-sizing: border-box;
     padding: 0.5em;
@@ -33,9 +33,19 @@
     border: 1px solid rgb(65, 59, 59);
 }
 
-.botao{
-    margin-left: 5em;
-    margin-top: 3em;
+#submit{
+    margin-left: 4.5em;
+    border-style: outset;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+       
+}
+
+#submit:hover{
+    color: black;
+    background-color: white;
+
 }
 
 .info{
@@ -54,7 +64,7 @@
 
 #entrada3{
     border-radius: 3px; 
-    background-color: rgb(133, 133, 133);
+    background-color: rgb(0, 0, 0);
     border:2px dashed rgb(19, 18, 18);
     max-width: 100%;
     padding: 30px;

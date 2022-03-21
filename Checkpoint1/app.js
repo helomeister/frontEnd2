@@ -1,28 +1,47 @@
-/* if usuário apertar submit , ciar uma variavel 
-let novoCard = document.createElement 
-console log (novoCard);
-ciar no html estrutura do card
-*/
+let form = document.getElementById('form');
+
+function createCard(){
+form.addEventListener("submit",function(e){
+    
+    
+        let tituloCard = document.querySelector("#entrada1").value;
+        let imagem = document.querySelector("#entrada2").value;
+        let texto = document.querySelector("#entrada3").value;
+    
+        document.getElementById('titulo').innerHTML = tituloCard;
+        document.getElementById('img').src = imagem;
+        document.getElementById('txt').innerHTML = texto;
+           
+        console.log(tituloCard,imagem,texto);
+       e.preventDefault();
+        
+});  
+}
+//Como adicionar varios cards?
+let novoCard = createCard();
+for(var i=0; i<100; i++){
+container1.insertBefore(novoCard, container1.firstChild);
+}
 
 //Criando uma função para capturar info dos usuários 
-let botao = document.querySelector("#submit");
-let newcard = document.querySelector('.card');
+//let botao = document.querySelector("#submit");
+//let newcard = document.querySelector('.card');
 
-botao.addEventListener("click",function(e){
-    e.preventDefault();
+//botao.addEventListener("click",function(e){
+  //  e.preventDefault();
+//
+  //  let tituloCard = document.querySelector("#entrada1").value;
+    //let imagem = document.querySelector("#entrada2").value;
+    //let texto = document.querySelector("#entrada3").value;
 
-    let tituloCard = document.querySelector("#entrada1").value;
-    let imagem = document.querySelector("#entrada2").value;
-    let texto = document.querySelector("#entrada3").value;
-
-    document.getElementById('titulo').innerHTML = tituloCard;
+    //document.getElementById('titulo').innerHTML = tituloCard;
     //imagem nao funcionou!
-    document.getElementById('img').innerHTML = imagem;
-    document.getElementById('txt').innerHTML = texto;
+    //document.getElementById('img').innerHTML = imagem;
+    //document.getElementById('txt').innerHTML = texto;
        
-    console.log(tituloCard,imagem,texto);
+    //console.log(tituloCard,imagem,texto);
     
-});
+//});
 
 //Criando um novo Card// não funcionooouu!
 //Perguntar sobre o ${}
