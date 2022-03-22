@@ -1,4 +1,6 @@
 let form = document.getElementById('form');
+let card = document.querySelector('card');
+
 
 function createCard(){
 form.addEventListener("submit",function(e){
@@ -11,17 +13,41 @@ form.addEventListener("submit",function(e){
         document.getElementById('titulo').innerHTML = tituloCard;
         document.getElementById('img').src = imagem;
         document.getElementById('txt').innerHTML = texto;
+
+        //card.push({ titulo: tituloCard, img:imagem, txt: texto });
            
         console.log(tituloCard,imagem,texto);
        e.preventDefault();
         
 });  
 }
-//Como adicionar varios cards?
+
 let novoCard = createCard();
-for(var i=0; i<100; i++){
-container1.insertBefore(novoCard, container1.firstChild);
+let lista;
+let container = document.getElementById("container");
+
+function salvarCard(){
+ 
+  for(let i=0; i< container.length ; i++){
+    lista += novoCard[i].titulo + novoCard[i].img + novoCard[i].txt;
+  }
+  lista= document.getElementById("container").textContent; 
+
 }
+let container1 = document.querySelector('container1');
+
+var btnSalvar = document.getElementById("submit");
+btnSalvar.addEventListener("click", salvarCard());
+
+
+
+//card.insertBefore(createCard, card.firstChild);
+//Como adicionar varios cards?
+//let novoCard = createCard();
+//container1.insertBefore(novoCard, container1.firstChild);
+
+
+
 
 //Criando uma função para capturar info dos usuários 
 //let botao = document.querySelector("#submit");
@@ -76,3 +102,5 @@ container1.insertBefore(novoCard, container1.firstChild);
  //SetAtribute= Adiciona um novo atributo ou modifica o valor 
  //let link = inserirImg.setAtribute("src", link);
     
+
+ //lista dos cards e card que agrupa infos
