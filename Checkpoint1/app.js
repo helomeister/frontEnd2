@@ -5,7 +5,7 @@ let tituloCard = document.querySelector("#entrada1");
 let imagem = document.querySelector("#entrada2");
 let texto = document.querySelector("#entrada3");
 
-
+//criando cards
 form.addEventListener("submit",function(e){
   e.preventDefault(); 
   
@@ -33,8 +33,11 @@ form.addEventListener("submit",function(e){
   form.reset();
   formulario.style.display = "none";     
         
-  
-      
-});  
+       
+}); 
+
+
+
+
 
 

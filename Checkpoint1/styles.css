@@ -103,7 +103,7 @@ body {
     
   }
 
-  ..cartao p {
+  .cartao p {
     font-size: 1em;
     margin-bottom: .2em;
     word-wrap: break-word;
