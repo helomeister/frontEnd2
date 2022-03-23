@@ -76,7 +76,7 @@ body {
 }
 
 
-.card {
+.cartao {
     position:relative;
     width: 30em;
     background-color: rgb(211, 210, 210);
@@ -91,11 +91,11 @@ body {
 
   }
   
-  .card img {
+  .cartao img {
     max-width: 100%;
   }
   
-  .card h2 {
+  .cartao h2 {
     font-size: 1em;
     margin-bottom: .2em;
     color:rgb(5, 5, 5);
@@ -103,7 +103,7 @@ body {
     
   }
 
-  ..card p {
+  ..cartao p {
     font-size: 1em;
     margin-bottom: .2em;
     word-wrap: break-word;
